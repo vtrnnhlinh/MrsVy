@@ -39,8 +39,5 @@ async def on_message(message):
     if 'em có nên nhắn cho cô không?' in message.content.lower():
         response = random.choice(yes_no)
         await message.channel.send(response)
-    if 'có phải do mày mà cô không thèm rep tao hong' in message.content.lower():
-        response = random.choice(yes_no)
-        await message.channel.send(response)
     await client.process_commands(message)
 client.run(TOKEN)
