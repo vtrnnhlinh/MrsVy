@@ -40,5 +40,7 @@ async def on_message(message):
         response = random.choice(yes_no)
         await message.channel.send(response)
     await client.process_commands(message)
-
+    if 'có phải do mày mà cô không thèm rep tao hong' in message.content.lower():
+        response = random.choice(yes_no)
+        await message.channel.send(response)
 client.run(TOKEN)
